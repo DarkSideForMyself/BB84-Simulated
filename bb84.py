@@ -11,14 +11,14 @@ def split_list(alist, parts=1):
 def uploadQbitsOnline(qbits):
     for parts in split_list(qbits, int(len(qbits) / 128)):
         resp = requests.put("https://quantum.ludlows.org/channel", json=parts).json()
-        if 'error' in resp or 'message' in resp: return False
+        if 'message' in resp: return False
     return True 
 
 def measureQbitsOnline(measure):
     result = []
     for parts in split_list(measure, int(len(measure) / 128)):
         resp = requests.post("https://quantum.ludlows.org/channel", json=parts).json()
-        if 'error' in resp or 'message' in resp: return None
+        if 'message' in resp: return None
         result += resp
     return result
 
