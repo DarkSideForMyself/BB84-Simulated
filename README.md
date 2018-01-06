@@ -12,13 +12,13 @@ Python 3 with requests installed
 
 Get Started
 ------------
-By running `main.py`, you will simulate the whole process in your computer's memory. The program prints Alice's(the Sender) and Bob's key(the Receiver) on the screen.
+By running `main.py`, you will simulate the whole process in your computer's memory. The program prints Alice's (the Sender) and Bob's (the Receiver) keys on the screen.
 
 Just type
 
     python main.py
 
-By running `alice.py` and `bob.py` at the same time, you will simulate the whole process using https://quantum.ludlows.org/channel as a quantum channel to transmit an simulated quantum. The two scripts print Alice's(the Sender) and Bob's (the Receiver) keys seperately. Be sure to run them within the same directory because they use 3 local files to communicate with each other.
+By running `alice.py` and `bob.py` at the same time, you will simulate the whole process using https://quantum.ludlows.org/channel as a quantum channel to transmit simulated quantums. The two scripts print Alice's(the Sender) and Bob's (the Receiver) keys seperately. Be sure to run them within the same directory because they use 3 local files to communicate with each other.
 
     python alice.py &
     python bob.py &
