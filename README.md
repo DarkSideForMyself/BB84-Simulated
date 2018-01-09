@@ -18,9 +18,9 @@ Just type
 
     python main.py
 
-By running `alice.py` and `bob.py` at the same time, you will simulate the whole process using https://quantum.ludlows.org/channel as a quantum channel to transmit simulated quantums. The two scripts print Alice's(the Sender) and Bob's (the Receiver) keys seperately. Be sure to run them within the same directory because they use 3 local files to communicate with each other.
+By running `alice.py` and `bob.py` at the same time, you will simulate the whole process using https://quantum.ludlows.org/channel as a quantum channel to transmit simulated quantums. The two scripts print Alice's (the Sender) and Bob's (the Receiver) keys seperately. Be sure to run them within the same directory because they use 3 local files to communicate with each other.
 
     python alice.py &
     python bob.py &
 
-The code of the online quantum channel quantum.ludlows.org/channel is in `channel.py`. The quantums expire automatically after one minute and is deleted immediately after being measured. It does not keep any records so it's secure to use. You may want to set up one using AWS Lambda and AWS DynamoDB.
+The code of the online quantum channel quantum.ludlows.org/channel is in `channel.py`. The quantums expire automatically after one minute and are deleted immediately after being measured. It does not keep any records so it's secure to use. You may want to set up one using AWS Lambda and AWS DynamoDB.
